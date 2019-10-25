@@ -1,0 +1,15 @@
+<div class="container mt-3 mb-3">
+    <h1 class="mb-4">My Travels Blog</h1>
+    <ng-container *ngFor="let post of postsArray">
+        <div class="card mb-4">
+            <div class="card-header bg-success text-light">{{post.title}}</div>
+
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <div [innerHTML]="post.body"></div>
+                    <footer class="blockquote-footer">By <strong>{{post.sender}}</strong> On {{ post.date | date:'medium'}} <span class="float-right badge badge-danger p-2">♥ {{post.likes}}</span></footer>
+                </blockquote>
+            </div>
+        </div>
+    </ng-container>
+</div>

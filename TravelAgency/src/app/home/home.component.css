@@ -1,0 +1,6 @@
+.home {
+    padding: 8em 2em;
+    color: #fff;
+    background: url("../../assets/home-bg.jpg") no-repeat top center;
+    background-size: cover;
+}
