@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'travels', component: TravelsComponent },
   { path: 'admin', component: AdminComponent },
-  { path: '**', redirectTo: '/home' }
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
