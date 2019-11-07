@@ -26,7 +26,7 @@ import { BlogService } from './shared/blog.service';
     AdminComponent,
     HomeComponent,
     TravelListComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +34,9 @@ import { BlogService } from './shared/blog.service';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [TravelService, BlogService], // optional
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
